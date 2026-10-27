@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Background Image</title>
+    <style>
+        /* Remove default browser spaces and lock dimensions */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .fullscreen-bg {
+            /* Path to your image */
+            background-image: url('1.png'); 
+            
+            /* Scale image to fill container without stretching */
+            background-size: cover; 
+            
+            /* Center the image horizontally and vertically */
+            background-position: center; 
+            
+            /* Prevent image repeating if it's too small */
+            background-repeat: no-repeat; 
+            
+            /* Fill the full screen height and width */
+            height: 100vh; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fullscreen-bg">
+        <!-- Optional overlay content goes here -->
+    </div>
+
+</body>
+</html>
